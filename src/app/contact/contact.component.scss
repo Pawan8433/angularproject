@@ -1,0 +1,79 @@
+/* Common section styles */
+section {
+  padding: 40px;
+  text-align: center;
+  padding-left: 0; /* Remove padding-left for better responsiveness */
+}
+
+section h1 {
+  font-size: 2.25rem; /* Use rem for consistent sizing */
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 2rem; /* Use rem for consistent sizing */
+  color: #007bff;
+}
+
+section p {
+  font-size: 1.125rem; /* Use rem for consistent sizing */
+  text-align: center;
+  color: #555;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100vh; /* Remove fixed height for better responsiveness */
+  text-align: center;
+  background-color: #333;
+  padding: 40px; /* Use padding instead of fixed height */
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjust spacing between buttons */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap items to next line on smaller screens */
+  justify-content: center;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff6347;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem; /* Use rem for consistent sizing */
+  transition: background-color 0.3s ease;
+}
+
+.contact-details i.dimensionIcon {
+  margin-right: 10px; /* Adjust spacing between icon and text */
+}
+
+.contact-details:hover {
+  background-color: #ff5733;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 10px; /* Adjust spacing between buttons */
+  }
+
+  .contact-details {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
