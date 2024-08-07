@@ -25,6 +25,8 @@
 <router-outlet></router-outlet>
 
 <!-- Hamburger Menu Button -->
+<!-- Hamburger Menu Button -->
 <button id="hamburger-menu" class="hamburger-menu" (click)="toggleSidebar()">
-  <i class="bi bi-list"></i>
+  <i class="bi" [ngClass]="{'bi-list': !isSidebarActive, 'bi-x': isSidebarActive}"></i>
 </button>
+
